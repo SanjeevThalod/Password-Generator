@@ -90,7 +90,7 @@ generate.addEventListener('click',function(){
                 var tu = 62 - t;
                 t += tu + Math.floor(Math.random()*8);
             }
-            temp += abc[ t <= 62 ? 62+i : t];
+            temp += abc[t];
         }
     }
     text.value = temp;
