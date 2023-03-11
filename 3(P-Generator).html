@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Generator</title>
+    <link rel="stylesheet" href="3.css">
+    <script src="https://kit.fontawesome.com/9e62478270.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <input type="text" id="text">
+        </div>
+        <div class="sec-con">
+            <div class="slider">
+                <input type="range" min="1" max="20" value="8" id="slide">
+                <p>Length: 8</p>
+            </div>
+            <div class="boxes">
+                <div>
+                    <input type="checkbox" name="A" id="A" class="c-wrap">
+                    <label for="A">Use UpperCase</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="0" id="0" class="c-wrap">
+                    <label for="0">Use Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="*" id="*" class="c-wrap">
+                    <label for="*">Use Special Characters</label>
+                </div>
+            </div>
+            <div class="btn">
+                <button id="butn">Generate</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="3.js"></script>
+</html>
