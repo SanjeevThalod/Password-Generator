@@ -60,7 +60,11 @@ generate.addEventListener('click',function(){
         for(var i = 0; i < size; i++){
             var t = Math.floor(Math.random()*70);
             console.log(t);
-            temp += abc[t >= 27 && t <= 53 ? t += 27 : t];
+            if(t >= 27 && t <= 53){
+                var tu = t-53;
+                t += tu + Math.floor(Math.random()*10);
+            }
+            temp += abc[t];
         }
     }else if(A == true && _o == false && _S == true){
         for(var i = 0; i < size; i++){
@@ -81,8 +85,8 @@ generate.addEventListener('click',function(){
         }
     }else if(A == false && _o == false && _S == true){
         for(var i = 0; i < size; i++){
-            var t = Math.floor(Math.random()*71);
-            if(t <= 62){
+            var t = Math.floor(Math.random()*70);
+            if(t >= 27 && t <= 62){
                 var tu = 62 - t;
                 t += tu + Math.floor(Math.random()*8);
             }
@@ -92,4 +96,3 @@ generate.addEventListener('click',function(){
     text.value = temp;
     temp = "";
 });
-console.log(abc[11])
